@@ -2,7 +2,6 @@ plugins {
    id 'java'
    id 'application'
    id 'org.ajoberstar.git-publish' version '4.2.0'
-   id 'checkstyle'
 }
 
 repositories {
@@ -32,11 +31,4 @@ tasks.withType(Test) {
 application { //Allows  ./gradlew run --args=path-to-test-data
     mainClass = 'edu.odu.cs.MostCommonWords'
 }
-
-checkstyle {
-    ignoreFailures = true
-    toolVersion = '10.21.0'
-}
-checkstyleTest.enabled = false
-
 
