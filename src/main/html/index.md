@@ -1,6 +1,7 @@
 # Project Reports
 
-Your Name
+Jennifer
 
 * [Tests](./reports/tests/test/)
 * [JavaDoc](./reports/javadoc/)
+* [CheckStyle](./reports/checkstyle/main.html)
