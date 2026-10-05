@@ -52,7 +52,7 @@ gitPublish {
             from 'build/reports'
         }
     }
-
 }
 
+gitPublishCopy.dependsOn reports
 task deployReports(dependsOn: ['reports', 'gitPublishPush'])
