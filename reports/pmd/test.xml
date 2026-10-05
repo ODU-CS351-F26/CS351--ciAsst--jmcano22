@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 https://pmd.github.io/schema/report_2_0_0.xsd" version="7.13.0" timestamp="2026-10-05T01:16:22.420">
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 https://pmd.github.io/schema/report_2_0_0.xsd" version="7.13.0" timestamp="2026-10-05T01:47:48.798">
 <file name="/home/runner/work/CS351--ciAsst--jmcano22/CS351--ciAsst--jmcano22/src/test/java/edu/odu/cs/TestWordCounter.java">
 <violation beginline="29" endline="29" begincolumn="24" endcolumn="31" rule="AvoidDuplicateLiterals" ruleset="Error Prone" package="edu.odu.cs" class="TestWordCounter" method="testAddNoDuplicates" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.13.0/pmd_rules_java_errorprone.html#avoidduplicateliterals" priority="3">
 The String literal "hello" appears 8 times in this file; the first occurrence is on line 29
