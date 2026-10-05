@@ -2,7 +2,7 @@ plugins {
    id 'java'
    id 'application'
    id 'org.ajoberstar.git-publish' version '4.2.0'
-   id 'checkstyle' 
+   id 'pmd'
 }
 
 repositories {
@@ -10,8 +10,8 @@ repositories {
 }
 
 java {
-    sourceCompatibility = JavaVersion.toVersion(21) 
-    targetCompatibility = JavaVersion.toVersion(21) 
+    sourceCompatibility = JavaVersion.toVersion(21)
+    targetCompatibility = JavaVersion.toVersion(21)
 }
 
 dependencies {
@@ -28,6 +28,10 @@ tasks.withType(Test) {
         }
 }
 
+pmd {
+    ignoreFailures = true
+}
+
 application { //Allows  ./gradlew run --args=path-to-test-data
     mainClass = 'edu.odu.cs.MostCommonWords'
 }
@@ -36,7 +40,7 @@ javadoc {
     destinationDir = file("$buildDir/reports/javadoc")
 }
 
-task reports(dependsOn: ['javadoc', 'test', 'checkstyleMain']) 
+task reports(dependsOn: ['javadoc', 'test', 'pmdMain'])
 
 gitPublish {
     branch = 'gh-pages'
